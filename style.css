@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Poppins', ;
+}
+
+ .hero {
+    position: relative;
+    background: url(Image/background.jpg) center/cover no-repeat;
+    height: 100vh;
+    color: white;
+ }
+
+  /* dark background overlay  */
+   .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+   }
+
+  
+   .hero > * {
+    position: relative;
+    z-index: 2;
+
+   }
+
+   .bracket {
+    color: #8c73f0;
+  }
+
+  /* brackets logo  */
+  .bracket {
+    color: #8c73f0;
+  }
+
+  .btn-custom {
+    background-color: #8c73f0 !important;
+    border: none;
+    color: white !important;
+    border-radius: 60px;
+    padding: 12px 32px;
+    font-weight: 500;
+    box-shadow: 0px 4px 12px rgba(140, 115, 240, 0.5);
+  }
+  
+
+  .btn-custom:hover {
+    background-color: #7a63d9 !important; 
+    color: white !important;
+  }
+
+  .icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .small-nav {
+    font-size: 13px;          
+    padding: 4px 0;        
+    white-space: nowrap;     
+    overflow-x: auto;        
+    scrollbar-width: none;    
+  }
+  
+  .small-nav::-webkit-scrollbar {
+    display: none;            
+  }
+  
+  .small-nav .nav-link {
+    padding: 6px 10px;        
+  }
+
+  .border-col {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
